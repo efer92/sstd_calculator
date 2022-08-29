@@ -46,9 +46,9 @@ class DBConfigInstance:
 _ANALYTICS_BASE_DB_CONFIG = DBConfig(DBMS='postgresql',
                                      DRIVER='psycopg2',
                                      HOSTNAME='localhost',
-                                     DATABASE='analytics_base',
-                                     USERNAME='postgres',
-                                     PASSWORD='xxXX1234',
+                                     DATABASE='%database%',
+                                     USERNAME='%username%',
+                                     PASSWORD='%password%',
                                      config_name='ANALYTICS_BASE_DB_CONFIG')
 
 ANALYTICS_BASE_DB_CONFIG = DBConfigInstance(_ANALYTICS_BASE_DB_CONFIG)
